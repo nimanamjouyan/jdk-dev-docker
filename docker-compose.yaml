@@ -7,6 +7,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    working_dir: /opt/working
     volumes:
       - .:/opt/working
     command: tail -F anything
